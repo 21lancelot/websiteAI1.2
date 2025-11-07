@@ -1,0 +1,576 @@
+export const ROSTER = {
+  divisions: [
+    {
+      id: "mens-flyweight",
+      label: "Men's",
+      name: "Men’s Flyweight",
+      weight: "125 lb",
+      fighters: [
+        {
+          slug: "alexandre-pantoja",
+          name: "Alexandre Pantoja",
+          rank: 1,
+          record: "28-5",
+          stance: "Orthodox",
+          height: "5'5\"",
+          reach: "67\"",
+          nationality: "Brazil",
+          gym: "American Top Team",
+          summary:
+            "Alexandre Pantoja blends relentless pressure with opportunistic grappling, chaining scrambles into dominant positions. His durability keeps him dangerous late, and his calf kicks open lanes for fight-ending back takes or crushing overhands against the division’s fastest strikers.",
+          notableFights: [
+            "vs Brandon Royval (UFC 296)",
+            "vs Brandon Moreno (UFC 290)"
+          ],
+          img: "assets/img/fighters/alexandre-pantoja.webp",
+          socials: {
+            ig: "https://www.instagram.com/alexandrepantoja/",
+            tw: "https://twitter.com/PantojaMMA"
+          }
+        },
+        {
+          slug: "brandon-royval",
+          name: "Brandon Royval",
+          rank: 2,
+          record: "17-7",
+          stance: "Orthodox",
+          height: "5'9\"",
+          reach: "68\"",
+          nationality: "USA",
+          gym: "Factory X",
+          summary:
+            "Brandon Royval fights at a chaotic pace, mixing spinning elbows and slick submissions with fearless forward pressure. His length and creativity turn scrambles into highlight transitions, forcing opponents to defend unorthodox attacks from the opening bell.",
+          notableFights: [
+            "vs Alexandre Pantoja (UFC 296)",
+            "vs Kai Kara-France (UFC 253)"
+          ],
+          img: "assets/img/fighters/brandon-royval.webp",
+          socials: {
+            ig: "https://www.instagram.com/brandonthomasknows/",
+            tw: "https://twitter.com/BrandonRoyval"
+          }
+        }
+      ]
+    },
+    {
+      id: "mens-bantamweight",
+      label: "Men's",
+      name: "Men’s Bantamweight",
+      weight: "135 lb",
+      fighters: [
+        {
+          slug: "sean-omalley",
+          name: "Sean O’Malley",
+          rank: 1,
+          record: "18-1",
+          stance: "Switch",
+          height: "5'11\"",
+          reach: "72\"",
+          nationality: "USA",
+          gym: "MMA Lab",
+          summary:
+            "Sean O’Malley leverages his height and precise footwork to control range, slicing in with sniper-like counters and spinning feints. His creativity keeps opponents guessing, while improved takedown defense lets his striking combinations pile up damage.",
+          notableFights: [
+            "vs Petr Yan (UFC 280)",
+            "vs Aljamain Sterling (UFC 292)"
+          ],
+          img: "assets/img/fighters/sean-omalley.webp",
+          socials: {
+            ig: "https://www.instagram.com/sugarsean/",
+            tw: "https://twitter.com/sugasean"
+          }
+        },
+        {
+          slug: "merab-dvalishvili",
+          name: "Merab Dvalishvili",
+          rank: 2,
+          record: "17-4",
+          stance: "Orthodox",
+          height: "5'6\"",
+          reach: "68\"",
+          nationality: "Georgia",
+          gym: "Serra-Longo Fight Team",
+          summary:
+            "Merab Dvalishvili is an endless cardio machine, chaining double-legs with mat returns until rivals drown under pressure. His smothering pace breaks timing and morale, while his jab and spinning attacks open level-change opportunities.",
+          notableFights: [
+            "vs Petr Yan (UFC Fight Night 221)",
+            "vs Marlon Moraes (UFC 266)"
+          ],
+          img: "assets/img/fighters/merab-dvalishvili.webp",
+          socials: {
+            ig: "https://www.instagram.com/merab.dvalishvili/",
+            tw: "https://twitter.com/MerabDvalishvil"
+          }
+        }
+      ]
+    },
+    {
+      id: "mens-featherweight",
+      label: "Men's",
+      name: "Men’s Featherweight",
+      weight: "145 lb",
+      fighters: [
+        {
+          slug: "ilia-topuria",
+          name: "Ilia Topuria",
+          rank: 1,
+          record: "15-0",
+          stance: "Orthodox",
+          height: "5'7\"",
+          reach: "69\"",
+          nationality: "Georgia",
+          gym: "Climent Club",
+          summary:
+            "Ilia Topuria couples elite boxing fundamentals with suffocating top control. His body-head combinations force high guards that expose hips, and once grounded he blankets foes with crushing pressure and fight-ending ground-and-pound.",
+          notableFights: [
+            "vs Josh Emmett (UFC on ABC 5)",
+            "vs Bryce Mitchell (UFC 282)"
+          ],
+          img: "assets/img/fighters/ilia-topuria.webp",
+          socials: {
+            ig: "https://www.instagram.com/iliatopuria/",
+            tw: "https://twitter.com/Topuriailia"
+          }
+        },
+        {
+          slug: "max-holloway",
+          name: "Max Holloway",
+          rank: 2,
+          record: "26-7",
+          stance: "Orthodox",
+          height: "5'11\"",
+          reach: "69\"",
+          nationality: "USA",
+          gym: "Gracie Technics",
+          summary:
+            "Max Holloway weaponizes volume, layering feints, stance switches, and endless combinations that build round after round. His legendary cardio and chin let him outlast shootouts, while his defensive shell absorbs counters without breaking rhythm.",
+          notableFights: [
+            "vs Calvin Kattar (UFC on ABC 1)",
+            "vs Justin Gaethje (UFC 300)"
+          ],
+          img: "assets/img/fighters/max-holloway.webp",
+          socials: {
+            ig: "https://www.instagram.com/blessedmma/",
+            tw: "https://twitter.com/BlessedMMA"
+          }
+        }
+      ]
+    },
+    {
+      id: "mens-lightweight",
+      label: "Men's",
+      name: "Men’s Lightweight",
+      weight: "155 lb",
+      fighters: [
+        {
+          slug: "islam-makhachev",
+          name: "Islam Makhachev",
+          rank: 1,
+          record: "26-1",
+          stance: "Southpaw",
+          height: "5'10\"",
+          reach: "70.5\"",
+          nationality: "Russia",
+          gym: "American Kickboxing Academy",
+          summary:
+            "Islam Makhachev inherits Dagestani pressure with a polished striking layer, disguising level changes behind check knees and straight lefts. Once he connects to the body lock, he floats to dominant rides that sap energy before hunting submissions.",
+          notableFights: [
+            "vs Alexander Volkanovski (UFC 294)",
+            "vs Charles Oliveira (UFC 280)"
+          ],
+          img: "assets/img/fighters/islam-makhachev.webp",
+          socials: {
+            ig: "https://www.instagram.com/islam_makhachev/",
+            tw: "https://twitter.com/MakhachevMMA"
+          }
+        },
+        {
+          slug: "arman-tsarukyan",
+          name: "Arman Tsarukyan",
+          rank: 2,
+          record: "22-3",
+          stance: "Orthodox",
+          height: "5'7\"",
+          reach: "72\"",
+          nationality: "Armenia",
+          gym: "American Top Team",
+          summary:
+            "Arman Tsarukyan brings explosive entries with slick inside trips, blending kickboxing blitzes that disguise his double-legs. His scrambling instincts keep him on top, and his elbows punish anyone who attempts to stand back up.",
+          notableFights: [
+            "vs Mateusz Gamrot (UFC on ESPN 38)",
+            "vs Beneil Dariush (UFC Fight Night 233)"
+          ],
+          img: "assets/img/fighters/arman-tsarukyan.webp",
+          socials: {
+            ig: "https://www.instagram.com/arm_011/",
+            tw: "https://twitter.com/ArmanUFC"
+          }
+        }
+      ]
+    },
+    {
+      id: "mens-welterweight",
+      label: "Men's",
+      name: "Men’s Welterweight",
+      weight: "170 lb",
+      fighters: [
+        {
+          slug: "leon-edwards",
+          name: "Leon Edwards",
+          rank: 1,
+          record: "22-3 (1 NC)",
+          stance: "Southpaw",
+          height: "6'0\"",
+          reach: "74\"",
+          nationality: "United Kingdom",
+          gym: "Team Renegade BJJ",
+          summary:
+            "Leon Edwards is a master of range management, pairing long kicks and intercepting elbows with sharp counter boxing. His defensive wrestling neutralizes grinders, and his patience allows explosive moments to land fight-altering high kicks.",
+          notableFights: [
+            "vs Kamaru Usman (UFC 278)",
+            "vs Colby Covington (UFC 296)"
+          ],
+          img: "assets/img/fighters/leon-edwards.webp",
+          socials: {
+            ig: "https://www.instagram.com/leon_edwardsmma/",
+            tw: "https://twitter.com/Leon_edwardsmma"
+          }
+        },
+        {
+          slug: "belal-muhammad",
+          name: "Belal Muhammad",
+          rank: 2,
+          record: "23-3 (1 NC)",
+          stance: "Orthodox",
+          height: "5'11\"",
+          reach: "72\"",
+          nationality: "USA",
+          gym: "Roufusport",
+          summary:
+            "Belal Muhammad overwhelms opponents with pressure footwork, steady jab volume, and mat returns that sap resolve. His adaptability lets him switch between southpaw looks and clinch grinding, dragging fights into deep waters he controls.",
+          notableFights: [
+            "vs Gilbert Burns (UFC 288)",
+            "vs Vicente Luque (UFC Fight Night 206)"
+          ],
+          img: "assets/img/fighters/belal-muhammad.webp",
+          socials: {
+            ig: "https://www.instagram.com/bullyb170/",
+            tw: "https://twitter.com/bullyb170"
+          }
+        }
+      ]
+    },
+    {
+      id: "mens-middleweight",
+      label: "Men's",
+      name: "Men’s Middleweight",
+      weight: "185 lb",
+      fighters: [
+        {
+          slug: "dricus-du-plessis",
+          name: "Dricus Du Plessis",
+          rank: 1,
+          record: "21-2",
+          stance: "Orthodox",
+          height: "6'1\"",
+          reach: "76\"",
+          nationality: "South Africa",
+          gym: "Team CIT",
+          summary:
+            "Dricus Du Plessis crashes forward with awkward angles, turning wild exchanges into clinch breaks where his power shots land flush. His grinding top game and willingness to brawl make him a nightmare to settle into rhythm against.",
+          notableFights: [
+            "vs Robert Whittaker (UFC 290)",
+            "vs Derek Brunson (UFC 285)"
+          ],
+          img: "assets/img/fighters/dricus-du-plessis.webp",
+          socials: {
+            ig: "https://www.instagram.com/stillknocks/",
+            tw: "https://twitter.com/dricusduplessis"
+          }
+        },
+        {
+          slug: "israel-adesanya",
+          name: "Israel Adesanya",
+          rank: 2,
+          record: "24-3",
+          stance: "Switch",
+          height: "6'4\"",
+          reach: "80\"",
+          nationality: "New Zealand",
+          gym: "City Kickboxing",
+          summary:
+            "Israel Adesanya dismantles guards with surgical feints, leg kicks, and counter hooks that punish reckless entries. His defensive footwork keeps him off the fence, and his finishing instincts spike the moment opponents overextend.",
+          notableFights: [
+            "vs Robert Whittaker (UFC 243)",
+            "vs Alex Pereira (UFC 287)"
+          ],
+          img: "assets/img/fighters/israel-adesanya.webp",
+          socials: {
+            ig: "https://www.instagram.com/stylebender/",
+            tw: "https://twitter.com/stylebender"
+          }
+        }
+      ]
+    },
+    {
+      id: "mens-light-heavyweight",
+      label: "Men's",
+      name: "Men’s Light Heavyweight",
+      weight: "205 lb",
+      fighters: [
+        {
+          slug: "alex-pereira",
+          name: "Alex Pereira",
+          rank: 1,
+          record: "10-2",
+          stance: "Orthodox",
+          height: "6'4\"",
+          reach: "79\"",
+          nationality: "Brazil",
+          gym: "Teixeira MMA & Fitness",
+          summary:
+            "Alex Pereira stalks behind a piston jab, forcing reactions he punishes with thunderous left hooks and calf kicks. His kickboxing pedigree gives him ice-cold composure in firefights, and his power changes fights with a single counter.",
+          notableFights: [
+            "vs Jiri Prochazka (UFC 295)",
+            "vs Jan Blachowicz (UFC 291)"
+          ],
+          img: "assets/img/fighters/alex-pereira.webp",
+          socials: {
+            ig: "https://www.instagram.com/alexpoatanpereira/",
+            tw: "https://twitter.com/PoatanOfficial"
+          }
+        },
+        {
+          slug: "magomed-ankalaev",
+          name: "Magomed Ankalaev",
+          rank: 2,
+          record: "19-1-1 (1 NC)",
+          stance: "Southpaw",
+          height: "6'3\"",
+          reach: "75\"",
+          nationality: "Russia",
+          gym: "Champion Gym Dagestan",
+          summary:
+            "Magomed Ankalaev is a patient southpaw counter striker, mixing calf kicks with precise straight lefts. When exchanges hit the mat, he clamps tight rides and ground control, leaning on fundamentals that stifle frantic scrambles.",
+          notableFights: [
+            "vs Anthony Smith (UFC 277)",
+            "vs Thiago Santos (UFC Vegas 50)"
+          ],
+          img: "assets/img/fighters/magomed-ankalaev.webp",
+          socials: {
+            ig: "https://www.instagram.com/ankalaev_magomed/",
+            tw: "https://twitter.com/AnkalaevM"
+          }
+        }
+      ]
+    },
+    {
+      id: "mens-heavyweight",
+      label: "Men's",
+      name: "Men’s Heavyweight",
+      weight: "265 lb",
+      fighters: [
+        {
+          slug: "jon-jones",
+          name: "Jon Jones",
+          rank: 1,
+          record: "27-1 (1 NC)",
+          stance: "Switch",
+          height: "6'4\"",
+          reach: "84.5\"",
+          nationality: "USA",
+          gym: "Jackson Wink MMA",
+          summary:
+            "Jon Jones controls distance with oblique kicks, spinning attacks, and elbows that slice in the pocket. His length pairs with elite fight IQ, allowing mid-fight adjustments and suffocating top pressure when the fight hits the mat.",
+          notableFights: [
+            "vs Ciryl Gane (UFC 285)",
+            "vs Daniel Cormier (UFC 214)"
+          ],
+          img: "assets/img/fighters/jon-jones.webp",
+          socials: {
+            ig: "https://www.instagram.com/jonjones/",
+            tw: "https://twitter.com/JonnyBones"
+          }
+        },
+        {
+          slug: "tom-aspinall",
+          name: "Tom Aspinall",
+          rank: 2,
+          record: "14-3",
+          stance: "Orthodox",
+          height: "6'5\"",
+          reach: "78\"",
+          nationality: "United Kingdom",
+          gym: "Team Kaobon",
+          summary:
+            "Tom Aspinall pairs heavyweight knockout power with surprising speed and grappling finesse. His feints draw hands down for blistering one-twos, and his reactive shots transition smoothly to submissions or finishing ground strikes.",
+          notableFights: [
+            "vs Sergei Pavlovich (UFC 295)",
+            "vs Alexander Volkov (UFC London 2022)"
+          ],
+          img: "assets/img/fighters/tom-aspinall.webp",
+          socials: {
+            ig: "https://www.instagram.com/tomaspinallofficial/",
+            tw: "https://twitter.com/tomaspinallmma"
+          }
+        }
+      ]
+    },
+    {
+      id: "womens-strawweight",
+      label: "Women’s",
+      name: "Women’s Strawweight",
+      weight: "115 lb",
+      fighters: [
+        {
+          slug: "zhang-weili",
+          name: "Zhang Weili",
+          rank: 1,
+          record: "25-3",
+          stance: "Switch",
+          height: "5'4\"",
+          reach: "63\"",
+          nationality: "China",
+          gym: "PI Shanghai",
+          summary:
+            "Zhang Weili unleashes explosive combinations and level-changing takedowns, overwhelming foes with athleticism and tenacity. Her clinch knees and spinning kicks keep opponents defensive, while her evolving grappling delivers sudden submissions.",
+          notableFights: [
+            "vs Joanna Jędrzejczyk (UFC 248)",
+            "vs Amanda Lemos (UFC 292)"
+          ],
+          img: "assets/img/fighters/zhang-weili.webp",
+          socials: {
+            ig: "https://www.instagram.com/zhangweilimma/",
+            tw: "https://twitter.com/MmaWeili"
+          }
+        },
+        {
+          slug: "yan-xiaonan",
+          name: "Yan Xiaonan",
+          rank: 2,
+          record: "18-3 (1 NC)",
+          stance: "Orthodox",
+          height: "5'5\"",
+          reach: "63\"",
+          nationality: "China",
+          gym: "Team Alpha Male",
+          summary:
+            "Yan Xiaonan is a sharp kickboxer whose fast hands and lateral movement disrupt grapplers before they shoot. Her straight right lands off angles, and her improved defensive wrestling lets her keep fights in striking range.",
+          notableFights: [
+            "vs Jessica Andrade (UFC 288)",
+            "vs Mackenzie Dern (UFC Vegas 61)"
+          ],
+          img: "assets/img/fighters/yan-xiaonan.webp",
+          socials: {
+            ig: "https://www.instagram.com/xiaonan_yan/",
+            tw: "https://twitter.com/YanXiaonan"
+          }
+        }
+      ]
+    },
+    {
+      id: "womens-flyweight",
+      label: "Women’s",
+      name: "Women’s Flyweight",
+      weight: "125 lb",
+      fighters: [
+        {
+          slug: "alexa-grasso",
+          name: "Alexa Grasso",
+          rank: 1,
+          record: "17-3-1",
+          stance: "Orthodox",
+          height: "5'5\"",
+          reach: "66\"",
+          nationality: "Mexico",
+          gym: "Lobo Gym",
+          summary:
+            "Alexa Grasso blends crisp boxing with renewed submission threats, using feints to draw counters she can slip before landing her left hook. Her composure under pressure anchors smart adjustments over five rounds.",
+          notableFights: [
+            "vs Valentina Shevchenko (UFC 285)",
+            "vs Maycee Barber (UFC 258)"
+          ],
+          img: "assets/img/fighters/alexa-grasso.webp",
+          socials: {
+            ig: "https://www.instagram.com/alexagrasso/",
+            tw: "https://twitter.com/AlexaGrasso"
+          }
+        },
+        {
+          slug: "valentina-shevchenko",
+          name: "Valentina Shevchenko",
+          rank: 2,
+          record: "23-4-1",
+          stance: "Southpaw",
+          height: "5'5\"",
+          reach: "66.5\"",
+          nationality: "Kyrgyzstan",
+          gym: "Tiger Muay Thai",
+          summary:
+            "Valentina Shevchenko delivers clinical Muay Thai counters, punishing kicks, and bullet-speed spinning attacks. Her well-timed throws and trip takedowns lead to methodical control, letting her dictate every phase.",
+          notableFights: [
+            "vs Joanna Jędrzejczyk (UFC 231)",
+            "vs Jessica Andrade (UFC 261)"
+          ],
+          img: "assets/img/fighters/valentina-shevchenko.webp",
+          socials: {
+            ig: "https://www.instagram.com/bulletvalentina/",
+            tw: "https://twitter.com/BulletValentina"
+          }
+        }
+      ]
+    },
+    {
+      id: "womens-bantamweight",
+      label: "Women’s",
+      name: "Women’s Bantamweight",
+      weight: "135 lb",
+      fighters: [
+        {
+          slug: "raquel-pennington",
+          name: "Raquel Pennington",
+          rank: 1,
+          record: "16-8",
+          stance: "Orthodox",
+          height: "5'7\"",
+          reach: "67.5\"",
+          nationality: "USA",
+          gym: "Triple Threat Gym",
+          summary:
+            "Raquel Pennington thrives in the clinch, grinding opponents with short elbows and knees while mixing steady jab work at distance. Her resilience and defensive awareness allow her to outlast brawls and edge tight decisions.",
+          notableFights: [
+            "vs Ketlen Vieira (UFC 273)",
+            "vs Mayra Bueno Silva (UFC Fight Night 235)"
+          ],
+          img: "assets/img/fighters/raquel-pennington.webp",
+          socials: {
+            ig: "https://www.instagram.com/rockypmma/",
+            tw: "https://twitter.com/RockyPMMA"
+          }
+        },
+        {
+          slug: "julianna-pena",
+          name: "Julianna Peña",
+          rank: 2,
+          record: "11-5",
+          stance: "Orthodox",
+          height: "5'6\"",
+          reach: "69\"",
+          nationality: "USA",
+          gym: "Sikjitsu",
+          summary:
+            "Julianna Peña marches forward with gritty boxing combinations that set up clinch trips and smothering top control. Her confidence and toughness keep her dangerous in scrambles, where she hunts for chokes and ground-and-pound.",
+          notableFights: [
+            "vs Amanda Nunes (UFC 269)",
+            "vs Cat Zingano (TUF 18 Finale)"
+          ],
+          img: "assets/img/fighters/julianna-pena.webp",
+          socials: {
+            ig: "https://www.instagram.com/venezuelanvixen/",
+            tw: "https://twitter.com/VenezuelanVixen"
+          }
+        }
+      ]
+    }
+  ]
+};
