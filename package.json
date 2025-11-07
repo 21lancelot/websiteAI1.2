@@ -1,0 +1,15 @@
+{
+  "name": "ufc-two-per-division",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate:fighters": "node scripts/generate-fighters.mjs",
+    "build:assets": "node scripts/minify.mjs",
+    "build": "npm run generate:fighters && npm run build:assets"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "terser": "^5.44.1"
+  }
+}
